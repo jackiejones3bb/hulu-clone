@@ -3,20 +3,19 @@ body {
     margin: 0;
 }
 
+/* hero image */
 header {
     min-height: 660px;
     background: url('./img/hero-image.jpg');
     background-size: cover;
     background-position: center top;
     overflow: hidden;
-
 }
 
 .nav-container {
     padding: 20px 40px;
     align-self: center;
 }
-
 
  nav ul li a {
      float: right;
@@ -31,6 +30,7 @@ header {
      text-align: center;
      margin-top: 80px;
  }
+
 .hero-text-container h5 {
     color:#2dbd9d;
     font-size: 14px;
@@ -41,7 +41,6 @@ header {
 .hero-text-container img {
     width: 15%;
     align-self: center;
-    
 }
 
 .hero-text-container h3 {
@@ -95,11 +94,9 @@ sup {
     height: 70x;
     display: flex;
     align-content: stretch;
-    background: linear-gradient(
-318.68deg
-, #0F495C 0%, #0D3640 49.72%, #08141F 100%);
-
+    background: linear-gradient(318.68deg, #0F495C 0%, #0D3640 49.72%, #08141F 100%);
 }
+
 .bundle-logo-container {
     display: flex;
     flex-grow: 1;
@@ -151,7 +148,6 @@ sup {
     flex-direction: column;
     align-items: center;
     justify-content: center;
- 
 }
 
 #get-bundle-button {
@@ -173,6 +169,7 @@ sup {
     padding-top: 7px;
 }
 
+/* outer grid for tv images */
 .tv-wrapper {
     display: grid;
     grid-template-columns: 20% 60% 20%;
@@ -190,7 +187,6 @@ sup {
     font-weight: 600;
     letter-spacing: 1px;
     padding-top: 60px;
-
 }
 
 .tvtext-middle {
@@ -210,6 +206,7 @@ sup {
     margin-top:38px;
 }
 
+/* inner grid for tv images */
 .tv-grid-container {
     grid-column: 2;
     display: grid;
@@ -220,14 +217,13 @@ sup {
     background-color: black;
 }
 
+/* overlay for tv images */
 .bobs {
     background: url(./img/bobs-burgers.jpg), linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
     background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: contain;
     grid-column: 1/2;
-;
-
 }
 
 .palm {
@@ -277,7 +273,6 @@ sup {
     letter-spacing: 1px;
     color: white;
     margin-top: 450px;
-
 }
 
 .plans {
@@ -285,34 +280,32 @@ sup {
     margin-top: 20px;
 }
 
+/* outer grid for plans chart */
 .plans .plans-grid {
     display: grid;
     grid-template-columns: 20% 60% 20%;
     background-color: white;
 }
 
-
+/* inner grid for plans chart */
 .plans .plans-container {
     grid-column: 2;
     display: grid;
     grid-template-columns: 40% 20% 20% 20%;
     grid-template-rows: auto;
     grid-auto-rows: 75px;
-
 }
 
 .plans .column1-heading {
     grid-column: 1/2;
     grid-row: 1/2;
     border-bottom: solid 1px #E6E6E6;
-
 }
 
 .plans .column1-heading h3 {
     font-size: 30px;
     font-weight: 900;
     margin-top: 20px;
-
 }
 
 .plans .column1-heading p {
@@ -330,7 +323,6 @@ sup {
     text-align: center;
     align-self: flex-end;
     border-bottom: solid 1px #E6E6E6;
-
 }
 
 .plan-heading-container h3 {
@@ -394,8 +386,6 @@ sup {
     padding: 6px;
 }
 
-
-
 .plan-feature-price {
     font-size: 18px;
     display: flex;
@@ -421,15 +411,15 @@ sup {
     border-bottom: solid 1px #E6E6E6;
 }
 
+/* tooptip when hovering over info image */
 
 .tooltip {
     position: relative;
     display:inline-block;
     cursor: pointer;
-  }
+}
   
-
-  .tooltip .tooltip-text {
+.tooltip .tooltip-text {
     visibility: hidden;
     width: auto;
     white-space: nowrap;
@@ -443,9 +433,9 @@ sup {
     z-index: 1;
     top: 35px;
     left: 50px;
-  }
+}
   
-  /* Show the tooltip text when you mouse over the tooltip container */
-  .tooltip:hover .tooltip-text {
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltip-text {
     visibility: visible;
 }
